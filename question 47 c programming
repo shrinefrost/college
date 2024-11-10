@@ -1,0 +1,17 @@
+//question 47:program to find factorial using recursion
+#include <stdio.h>
+int product=1;
+int factorial(int n){
+    if (n==1){
+        return product;
+    }
+    product = n*product;
+    n--;
+    factorial(n);
+}
+int main() {
+int n;
+printf("enter a number:");
+scanf("%d",&n);
+int result =factorial(n);
+printf("factorial of %d: %d",n,result);
